@@ -54,7 +54,7 @@ var SetupLottie = (myParent) => {
   <script>buildCopyodeButton(document.currentScript.parentElement);</script>
 */
 
-var buildCopyodeButton = (myContainer) => {
+var buildCopCodeButton = (myContainer) => {
   let myElement = document.createElement('div');
   myElement.innerHTML =
     '<img style="cursor: pointer;" src="https://moodle.techcollege.dk/draftfile.php/289107/user/draft/142615763/copy%20icon.svg"alt ="copy" width="20 ">';
