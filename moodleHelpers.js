@@ -6,7 +6,6 @@ var setupButton = (myParent,url,classIdentifier) => {
     console.log(myButton)
 
     myButton.addEventListener('click', () => {
-      window.open('https://'+url, "_blank");
+      window.open(url, "_blank");
     })
-
   }
