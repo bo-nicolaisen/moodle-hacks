@@ -14,3 +14,12 @@ pre {
     display: block;
     word-wrap: break-word;
 }
+
+
+.webTip {
+    /* Default state */
+    display: none;
+  }
+  .webTipToggle:checked ~ .control-me {
+   display: block;
+  }
