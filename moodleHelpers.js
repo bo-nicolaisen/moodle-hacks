@@ -1,11 +1,12 @@
 
-var setupButton = (myParent,url,classIdentifier) => {
-    console.log(myParent)
-    let myButton = myParent.querySelectorAll(classIdentifier)[0];
+var setupButton = (myParent, url, classIdentifier) => {
+  console.log(myParent)
+  let myButton = myParent.querySelectorAll(classIdentifier)[0];
 
-    console.log(myButton)
+  console.log(myButton)
 
-    myButton.addEventListener('click', () => {
-      window.open('https://'+url, "_blank");
-    })
-  }
+  myButton.addEventListener('click', () => {
+    let myrealUrl = 'https://' + url;
+    window.open(myrealUrl, "_blank");
+  })
+}
