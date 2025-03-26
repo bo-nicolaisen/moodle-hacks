@@ -13,11 +13,10 @@ var setupButton = (myParent, url, classIdentifier) => {
   })
 }
 
-/* brug i moodle, kræver at moodleHelpers.js er linket ind i html'en
-
+/* bruges på en button som her:
 <p>
 <button class="btn btn-secondary RepoButton" type="button"> Template repository</button>
-  <script src="https://bo-nicolaisen.github.io/moodle-hacks/moodleHelpers.js"></script>  // kan undværes hvis det er linket i toppen
+  <script src="https://bo-nicolaisen.github.io/moodle-hacks/moodleHelpers.js"></script>
   <script>
     setupButton(document.currentScript.parentElement,'github.com/bo-nicolaisen/moodle-hacks/blob/main/moodleHelpers.js','.RepoButton');
   </script>
