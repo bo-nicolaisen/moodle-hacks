@@ -64,7 +64,7 @@ var buildCopyCodeButton = (myContainer) => {
     let myCont = e.target.parentElement.parentElement;
     // let codeElement = myCont.parentElement.querySelectorAll("pre")[0];
     let preElement= myCont.querySelectorAll("pre")[0];
-    preElement.style='background:rgb(192, 192, 192); border: 1px solid #ddd; border-left: 3px solid #f36d33; color: #666; page-break-inside: avoid; font-family: monospace; font-size: 15px; line-height: 1.6; margin-bottom: 1.6em; max-width: 100%; overflow: auto; padding: 1em 1.5em; display: block; word-wrap: break-word;';
+    preElement.style.cssText='background:rgb(192, 192, 192); border: 1px solid #ddd; border-left: 3px solid #f36d33; color: #666; page-break-inside: avoid; font-family: monospace; font-size: 15px; line-height: 1.6; margin-bottom: 1.6em; max-width: 100%; overflow: auto; padding: 1em 1.5em; display: block; word-wrap: break-word;';
     let copyElement = myCont.querySelectorAll("code")[0];
 
     navigator.clipboard.writeText(copyElement.innerText);
