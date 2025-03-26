@@ -51,7 +51,7 @@ var SetupLottie = (myParent) => {
 /* script tagget skal være på samme sibling niveau som code tagget
 
   <script src="https://bo-nicolaisen.github.io/moodle-hacks/moodleHelpers.js"></script>
-  <script>buildCopyodeButton(document.currentScript.parentElement);</script>
+  <script>buildCopyCodeButton(document.currentScript.parentElement);</script>
 */
 
 var buildCopyCodeButton = (myContainer) => {
