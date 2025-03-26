@@ -22,3 +22,26 @@ var setupButton = (myParent, url, classIdentifier) => {
   </script>
 </p>
 */
+
+/* lottie files setup  kræver et link til lottie player
+
+eks:
+<section style="width: 200px; height: 200px; display: inline-block; float: left; padding-right: 50px;">
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://bo-nicolaisen.github.io/moodle-hacks/moodleHelpers.js"></script>
+  <script>
+    SetupLottie(document.currentScript.parentElement);
+  </script>
+
+</section>
+*/
+var SetupLottie = (myParent) => {
+  let myLottieElement = document.createElement("section");
+
+  myLottieElement.innerHTML =
+    '<dotlottie-player src="https://nicolaisen.digital/lotties/js101/functions.json" background="transparent" speed="1"" loop autoplay></dotlottie-player>';
+
+
+
+  myParent.appendChild(myLottieElement);
+}
