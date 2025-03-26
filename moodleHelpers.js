@@ -56,17 +56,18 @@ var SetupLottie = (myParent) => {
 
 var buildCopyCodeButton = (myContainer) => {
   let myElement = document.createElement('div');
-  myElement.innerHTML =
-    '<img style="cursor: pointer;" src="https://moodle.techcollege.dk/draftfile.php/289107/user/draft/142615763/copy%20icon.svg"alt ="copy" width="20 ">';
+  myElement.innerHTML ='<img style="cursor: pointer;" src="https://moodle.techcollege.dk/draftfile.php/289107/user/draft/142615763/copy%20icon.svg"alt ="copy" width="20 ">';
+
+  let preElement= myContainer.querySelectorAll("pre")[0];
+  console.log(preElement)
+
+  preElement.setAttribute("style","background:rgb(192, 192, 192); border: 1px solid #ddd; border-left: 3px solid #f36d33; color: #666; page-break-inside: avoid; font-family: monospace; font-size: 15px; line-height: 1.6; margin-bottom: 1.6em; max-width: 100%; overflow: auto; padding: 1em 1.5em; display: block; word-wrap: break-word;");
 
   myElement.addEventListener('click', (e) => {
 
     let myCont = e.target.parentElement.parentElement;
     // let codeElement = myCont.parentElement.querySelectorAll("pre")[0];
-    let preElement= myCont.querySelectorAll("pre")[0];
-    console.log(preElement)
-
-    preElement.setAttribute("style","background:rgb(192, 192, 192); border: 1px solid #ddd; border-left: 3px solid #f36d33; color: #666; page-break-inside: avoid; font-family: monospace; font-size: 15px; line-height: 1.6; margin-bottom: 1.6em; max-width: 100%; overflow: auto; padding: 1em 1.5em; display: block; word-wrap: break-word;");
+  
    
     let copyElement = myCont.querySelectorAll("code")[0];
 
