@@ -45,3 +45,29 @@ var SetupLottie = (myParent) => {
 
   myParent.appendChild(myLottieElement);
 }
+
+
+/* build copy code button */
+/* script tagget skal være på samme sibling niveau som code tagget
+
+  <script src="https://bo-nicolaisen.github.io/moodle-hacks/moodleHelpers.js"></script>
+  <script>buildCopyodeButton(document.currentScript.parentElement);</script>
+*/
+
+var buildCopyodeButton = (myContainer) => {
+  let myElement = document.createElement('div');
+  myElement.innerHTML =
+    '<img style="cursor: pointer;" src="https://moodle.techcollege.dk/draftfile.php/289107/user/draft/142615763/copy%20icon.svg"alt ="copy" width="20 ">';
+
+  myElement.addEventListener('click', (e) => {
+
+    let myCont = e.target.parentElement.parentElement;
+    // let codeElement = myCont.parentElement.querySelectorAll("pre")[0];
+    let copyElement = myCont.querySelectorAll("code")[0];
+
+    navigator.clipboard.writeText(copyElement.innerText);
+    alert("Koden er kopieret");
+  });
+
+  myContainer.querySelectorAll('section')[0].prepend(myElement)
+}
