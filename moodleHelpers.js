@@ -1,7 +1,7 @@
 
-var setupButton = (myParent,url) => {
+var setupButton = (myParent,url,classIdentifier) => {
     console.log(myParent)
-    let myButton = myParent.querySelectorAll(".RepoButton")[0];
+    let myButton = myParent.querySelectorAll(RepoButton)[0];
 
     console.log(myButton)
 
@@ -10,4 +10,3 @@ var setupButton = (myParent,url) => {
     })
 
   }
-  
